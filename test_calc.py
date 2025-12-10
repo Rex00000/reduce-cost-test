@@ -11,7 +11,7 @@ class TestCalc(unittest.TestCase):
         with self.assertRaises(ValueError):
             apply_discount(100, 1.5)
 
-    def test_tax():
+    def test_tax(self):
         self.assertEqual(calculate_tax(100, 0.05), 105)
 
 if __name__ == "__main__":
